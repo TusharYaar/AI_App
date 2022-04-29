@@ -21,12 +21,11 @@ const ImagePreview = ({ route, navigation }) => {
         type: "image/jpg",
       });
 
-      const result = await fetch("https://c3e2-136-233-9-101.ngrok.io/api/upload", {
+      const result = await fetch("https://74d0-106-208-43-53.ngrok.io/api/upload", {
         method: "POST",
         body: data,
       });
-      console.log(JSON.stringify(result));
-      navigation.navigate("result", { result });
+      navigation.navigate("result");
     } catch (error) {
       console.log(error);
     } finally {

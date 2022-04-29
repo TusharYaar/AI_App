@@ -1,12 +1,10 @@
 import { StyleSheet, Text, View } from "react-native";
 import React from "react";
 
-const ResultScreen = ({ navigation, route }) => {
-  const { result } = route.params;
-
+const ResultScreen = () => {
   return (
-    <View>
-      <Text>{JSON.stringify(result)}</Text>
+    <View style={styles.container}>
+      <Text>Your Image has been successfully Uploaded. Use the desktop to run it thorugh the AI model</Text>
     </View>
   );
 };
@@ -19,5 +17,6 @@ const styles = StyleSheet.create({
     backgroundColor: "#fff",
     alignItems: "center",
     justifyContent: "center",
+    padding: 40,
   },
 });
